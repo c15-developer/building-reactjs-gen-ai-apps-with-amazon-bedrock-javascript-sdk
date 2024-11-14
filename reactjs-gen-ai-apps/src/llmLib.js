@@ -16,7 +16,7 @@ export const getModel = async (modelId = "anthropic.claude-instant-v1") => {
         region: region,
         streaming: true,
         credentials: session.credentials,
-        modelKwargs: { max_tokens_to_sample: 1000, temperature: 1 },
+        modelKwargs: { max_tokens_to_sample: 1000, temperature: 0.5 },
     })
     return model
 }
